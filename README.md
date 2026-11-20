@@ -1,17 +1,55 @@
-# FLL Bioglow Results Sheet
+# FLL Robot Game Tracker
 
-This setup creates two tabs in a Google Sheet:
+The FLL Bioglow Results Tracker helps teams record mission results and scores during a robot game run. It includes a 2:30 mission timer and saves run results to a Google Sheet.
 
-- **Missions**: `Mission ID`, `Run number`, `Mission Name`, `No Points`, `Yes Points`. Add one row per mission and enter its run number and points for each answer.
-- **Results**: `Attempt Number`, `Run Number`, `Mission ID`, `Mission Name`, `Result`, `Score`, `Elapsed Time (seconds)`, `Since Previous Mission (seconds)`. Timing values are rounded to three decimal places; the first mission uses its elapsed time for both timing columns, and N/A-run missions show `N/A` in both.
+Follow these steps to set up and run the app.
 
-## Create the sheet
+## 1. Fork and clone the repository
 
-1. Create a blank Google Sheet.
-2. Open **Extensions > Apps Script**.
-3. Replace the contents of `Code.gs` with the contents of this folder's `Code.gs` file, then save.
-4. Return to the spreadsheet and reload it. A **FLL Tracker** menu will appear.
-5. Select **FLL Tracker > Set up tracker tabs** and approve the requested access.
-6. Add the official mission IDs, names, and Yes/No point values to the **Missions** tab.
+1. Go to the [repository fork page](https://github.com/teamhexagears/FLL_robot_game_tracker/fork).
+2. Clone your fork to your computer.
 
-The setup is safe to run again: it refreshes formatting, adds the timing headers when missing, and does not clear mission or result rows. Existing millisecond values are converted to seconds when the timing headers are migrated; N/A-run missions are marked `N/A`, while other rows with no recorded timing remain blank.
+## 2. Import the database into Google Sheets
+
+1. Open [Google Sheets](https://docs.google.com/spreadsheets/u/0/).
+2. Create a new spreadsheet.
+3. Select **File > Import > Upload**.
+4. Choose `backend\FLL Bioglow Results.xlsx` from your cloned repository.
+
+## 3. Add the Apps Script files
+
+1. In your spreadsheet, select **Extensions > Apps Script**.
+2. In the Apps Script window, create three files:
+   - `appscript.json`
+   - `Code.gs`
+   - `webapp.gs`
+3. Copy the contents of the corresponding files from the repository's `backend` directory into the Apps Script files.
+
+## 4. Set up the tracker
+
+1. In Apps Script, open `Code.gs` and select `setupTrackerSheet`.
+2. Click **Run**.
+3. If prompted to authorize access, click **Review permissions**, then **Advanced > Go to untitled project (unsafe)**.
+
+## 5. Deploy the web app
+
+1. In Apps Script, click **Deploy > New deployment**.
+2. Select **Web app**.
+3. Click **Deploy**.
+4. Copy the web app URL.
+
+## 6. Configure the frontend
+
+1. Copy `frontend/app.js.template` to `frontend/app.js`.
+2. Open `frontend/app.js` in a text editor.
+3. Paste the copied URL on line 83. It should look like this:
+
+   ```js
+   const appConfig = {
+     apiUrl: 'https://script.google.com/macros/s/xxxx/exec'
+   }
+   ```
+
+## 7. Run the app
+
+Open `frontend/index.html` in your browser.
