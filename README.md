@@ -53,3 +53,5 @@ Follow these steps to set up and run the app.
 ## 7. Run the app
 
 Open `frontend/index.html` in your browser.
+
+## 8. ENJOY!!!!!!!!!!!!!!!
