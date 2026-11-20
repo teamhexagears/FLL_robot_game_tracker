@@ -50,8 +50,9 @@ Follow these steps to set up and run the app.
      apiUrl: 'https://script.google.com/macros/s/xxxx/exec'
    }
    ```
-   > [!CAUTION]
-   > Do not share your `apiUrl`. The deployment is configured so anyone with the URL can access the spreadsheet. The `frontend/app.js` file is listed in `.gitignore` so the URL is not committed.
+
+> [!CAUTION]
+> Do not share your `apiUrl`. The deployment is configured so anyone with the URL can access the spreadsheet. The `frontend/app.js` file is listed in `.gitignore` so the URL is not committed.
 
 ## 7. Run the app
 
