@@ -80,7 +80,7 @@ const defaultMissions = [
 })).sort(compareMissionOrder);
 
 const appConfig = {
-  apiUrl: 'https://script.google.com/macros/s/AKfycbyCoIUYHrSelajtNOYZnuQmY1FDijxKb94RhZSny8Xt92B7UpCCBWpp_RoemHKq9K4p/exec'
+  apiUrl: '<your Google Apps Script URL here>'
 }
 
 const state = {
