@@ -1,7 +1,8 @@
 # FLL Robot Game Tracker
 
-The FLL Bioglow Results Tracker helps teams record mission results and scores during a robot game run. It includes a 2:30 mission timer and saves run results to a Google Sheet.
+The FLL Bioglow Results Tracker helps teams record mission results and scores during a robot game run. It includes a 2:30 mission timer and saves run results to a Google Sheet. With the results, we can do statistics on our performance
 
+At this moment, some of the steps are manual.
 Follow these steps to set up and run the app.
 
 ## 1. Fork and clone the repository
@@ -35,6 +36,7 @@ Follow these steps to set up and run the app.
 
 1. In Apps Script, click **Deploy > New deployment**.
 2. Select **Web app**.
+3. Under **Who has access** dropdown menu, click **Anyone**.
 3. Click **Deploy**.
 4. Copy the web app URL.
 
