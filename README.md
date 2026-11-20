@@ -16,7 +16,7 @@ Follow these steps to set up and run the app.
 
 1. Go to the [repository fork page](https://github.com/teamhexagears/FLL_robot_game_tracker/fork).
 2. Clone your fork to your computer.
-
+  - If you don't know how to use Github, you can download the ZIP file directly(see [screenshot](screenshots/download_repo.png))
 ## 2. Import the database into Google Sheets
 
 1. Login to your google account and open [Google Sheets](https://docs.google.com/spreadsheets/u/0/).
