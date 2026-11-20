@@ -22,7 +22,7 @@ Follow these steps to set up and run the app.
 1. Login to your google account and open [Google Sheets](https://docs.google.com/spreadsheets/u/0/).
 2. Create a new **Blank Spreadsheet**.
 3. Select **File > Import > Upload**.
-4. Choose `backend\FLL Bioglow Results.xlsx` from your cloned repository.
+4. Choose `backend\FLL Robot Game Tracker Database.xlsx` from your cloned repository.
 
 ## 3. Add the Apps Script files
 
