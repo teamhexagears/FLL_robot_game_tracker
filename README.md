@@ -92,8 +92,8 @@ It has two tabs by default, Results and Missions
 ## Make changes to Google App Scripts
 It's possible that you want to do a bugfix or add more features in Google App Script
 Make sure following actions have been done
-1. Re-deploy the Google App Script mentioned in Step 5
-2. Update frontend/app.js following instructions in step 6
+1. Re-deploy the Google App Script mentioned in [Step 5](#5-deploy-the-web-app)
+2. Update frontend/app.js following instructions in [Step 6](6-configure-the-frontend)
 
 
 
