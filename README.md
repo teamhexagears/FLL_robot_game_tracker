@@ -85,9 +85,9 @@ It has two tabs by default, Results and Missions
 - You usually don't need to touch the Results tab, as it is maintained by frontend script
 - For Missions tab
   - All the missions for Bioglow has already been populated, for future seasons you'll have to populate the missions table. Feel free to submit a pull-request if you have done it.
-  - You will need to updat the **Run number** column in the Mission tab, as each team plan the routes differently.
+  - You will need to update the **Run number** column in the Mission tab, as each team plan the routes differently. (see [screenshot](screenshots/change_run_number.png))
   - Once Missions have been modified and saved, refresh index.html on your browser directly and it will take effect.
-  - You can also modified the **Mission Name** to use your own wording
+  - You can also modified the **Mission Name** to use your own wording (see [screenshot](screenshots/change_mission_name.png))
 
 ## Make changes to Google App Scripts
 It's possible that you want to do a bugfix or add more features in Google App Script
