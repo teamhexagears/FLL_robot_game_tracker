@@ -12,7 +12,7 @@ Follow these steps to set up and run the app.
 
 ## 2. Import the database into Google Sheets
 
-1. Open [Google Sheets](https://docs.google.com/spreadsheets/u/0/).
+1. Login to your google account and open [Google Sheets](https://docs.google.com/spreadsheets/u/0/).
 2. Create a new spreadsheet.
 3. Select **File > Import > Upload**.
 4. Choose `backend\FLL Bioglow Results.xlsx` from your cloned repository.
@@ -50,7 +50,8 @@ Follow these steps to set up and run the app.
      apiUrl: 'https://script.google.com/macros/s/xxxx/exec'
    }
    ```
-   [!CAUTION] Do not share apiUrl, as we configured "Anyone" to have access to your Spreadsheet; we have added frontend/app.js in .gitignore so it does not get committed.
+   > [!CAUTION]
+   > Do not share your `apiUrl`. The deployment is configured so anyone with the URL can access the spreadsheet. The `frontend/app.js` file is listed in `.gitignore` so the URL is not committed.
 
 ## 7. Run the app
 
