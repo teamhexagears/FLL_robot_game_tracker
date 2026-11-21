@@ -117,8 +117,6 @@ Provide a page that analyzes saved robot-game runs by mission, run number, attem
 
 ### Metrics
 
-The page must provide at least:
-
 | Metric | Definition |
 |---|---|
 | Mission success rate | Successful results divided by recorded results for that mission |
